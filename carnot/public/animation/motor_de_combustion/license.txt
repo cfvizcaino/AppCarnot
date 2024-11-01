@@ -1,0 +1,11 @@
+Model Information:
+* title:	Motor de combustión
+* source:	https://sketchfab.com/3d-models/motor-de-combustion-ff66d428b25e48cc89c6e9bb0e1aa5e8
+* author:	simondg (https://sketchfab.com/simondg)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Motor de combustión" (https://sketchfab.com/3d-models/motor-de-combustion-ff66d428b25e48cc89c6e9bb0e1aa5e8) by simondg (https://sketchfab.com/simondg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

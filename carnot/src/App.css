@@ -1,0 +1,363 @@
+.App {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f4f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.cycle-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.cycle-selector button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border: 2px solid #3498db;
+  color: #3498db;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.cycle-selector button:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.cycle-selector button.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.comparison-selector{
+  margin: 10px 0px 10px 0px;
+  display: inline-block;
+}
+
+.controls-container {
+  width: 100%;
+  max-width: 800px; /* Ajusta este valor según tus necesidades */
+  display: flex;
+  justify-content: center;
+}
+
+.controls { 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-group  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ind-input {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.ind-input label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.ind-input input {
+  padding: 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.reset-button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #c0392b;
+}
+
+.chart-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.simulation-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.sim-button {
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sim-button:hover {
+  background-color: #27ae60;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Comparador {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.results {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.info-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.info-button:hover {
+  background-color: #45a049;
+}
+
+.info-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.info-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.info-content h3 {
+  margin-top: 0;
+  color: #4CAF50;
+  text-align: center;
+}
+
+.info-content p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.close-button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: #d32f2f;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart {
+  width: 48%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.chart-type-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.chart-type-selector button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.chart-type-selector button:hover {
+  background-color: #45a049;
+}
+
+.chart-type-selector button:focus {
+  outline: none;
+}
+
+.chart-type-selector button.active {
+  background-color: #357a38;
+}
+
+.case-study {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.case-study h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.case-study h4 {
+  color: #34495e;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.case-study ul {
+  padding-left: 20px;
+}
+
+.case-study li {
+  margin-bottom: 5px;
+}
+
+.cycle-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cycle-image.enlarged{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 1000;
+}
+
+.cycle-image.enlarged:hover{
+  opacity: 1;
+}
